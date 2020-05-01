@@ -77,14 +77,14 @@ public class JsonUtils {
         }
         back = index;
         if (front == back)
-            placeOfOrigin = "No data for this field.";
+            placeOfOrigin = "Unknown.";
         else
             placeOfOrigin = json.substring(front, back);
 
         // We add 17 to index and find description
         index += 17;
         front = index;
-        while (json.charAt(index) != '"') {
+        while (json.charAt(index) != '"' || json.charAt(index - 1) == '\\') {
             index++;
         }
         back = index;
