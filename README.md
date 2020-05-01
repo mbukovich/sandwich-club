@@ -1,4 +1,4 @@
-# Sandwich Club Project Starter Code
+# Sandwich Club Project
 
 ## Project Overview
 This was a project for my Udacity Android Developer Nanodegree 
